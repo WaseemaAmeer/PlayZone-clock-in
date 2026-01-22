@@ -1,0 +1,151 @@
+/* Tailwind-based styles for clockin component */
+
+.app-container {
+  @apply min-h-screen text-white bg-[radial-gradient(circle_at_top,_#0F172B,_#1D293D,_#0F172B)] font-['Segoe_UI',sans-serif] box-border m-0 p-0;
+}
+
+
+.top-bar {
+  @apply flex justify-between items-center p-4 bg-gradient-to-r from-slate-900 to-slate-950;
+}
+
+.logo {
+  @apply flex items-center gap-2;
+}
+
+.logo-icon {
+  @apply text-white font-bold py-4 px-3.5 rounded-[10px] 
+         bg-gradient-to-r from-[#FF6900] to-[#F54900] shadow-[0_10px_15px_rgba(255,165,0,0.4)];
+}
+
+
+.logo h1 {
+  @apply text-base font-bold;
+}
+
+.logo span {
+  @apply text-sm opacity-70;
+}
+
+.time-box {
+  @apply text-right;
+}
+
+.time {
+  @apply text-[#FF8904] font-bold text-sm;
+}
+
+.date {
+  @apply text-xs opacity-70;
+}
+
+.content {
+  @apply md:max-w-md lg:max-w-lg h-auto mx-auto mt-10 px-8;
+}
+
+.card {
+  @apply bg-[#FFFFFF0D] backdrop-blur-[12px] rounded-2xl p-5 mb-5;
+}
+
+
+.user-info {
+  @apply flex items-center gap-4;
+}
+
+.avatar {
+  @apply bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center font-bold;
+}
+
+.user-info h3 {
+  @apply text-base;
+}
+
+.user-info p {
+  @apply text-xs opacity-70;
+}
+
+.shift-header {
+  @apply flex items-center gap-2 font-bold mb-3;
+}
+
+.hours-box {
+  @apply bg-[#FFFFFF0D] p-4 rounded-xl;
+}
+
+.hours-box span {
+  @apply text-xs opacity-70;
+}
+
+.hours-box strong {
+  @apply block mt-1.5 text-xl;
+}
+
+
+
+.card-out{
+    @apply bg-[#FF69001A] rounded-2xl p-5 text-white font-bold border-[#FF69001A] shadow-[0_6px_10px_rgba(255,165,0,0.2)];
+}
+.card {
+  @apply bg-[#FFFFFF0D] rounded-2xl p-5 text-white font-bold;
+}
+
+/* Header */
+
+.shift-header-out {
+  @apply mb-4 ;
+}
+
+
+.shift-title {
+  @apply flex items-center justify-between text-white font-semibold ;
+}
+
+.shift-status {
+  @apply text-sm text-[#FF8904] bg-orange-500/20 px-4 py-1 rounded-full;
+}
+
+
+
+
+
+/* Content */
+.shift-content {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.shift-box {
+  @apply bg-[#FFFFFF0D] rounded-xl p-4 font-bold;
+}
+
+.label {
+  @apply text-xs text-slate-400;
+}
+
+.value {
+  @apply block mt-2 text-xl font-semibold;
+}
+
+.duration {
+  @apply text-orange-400;
+}
+
+
+
+
+
+.clock-btn {
+  @apply w-full flex items-center justify-center gap-2 p-3 text-lg font-bold rounded-[10px] border-none cursor-pointer bg-gradient-to-r from-[#FF6900] to-[#F54900] text-white mt-2.5 active:scale-95 shadow-[0_6px_15px_rgba(255,165,0,0.4)];
+}
+
+.clock-btn-out {
+  @apply w-full flex items-center justify-center gap-2 p-3 text-lg font-bold rounded-[10px] border-none cursor-pointer bg-gradient-to-r from-[#FB2C36] to-[#E7000B] text-white mt-2.5 active:scale-95 shadow-[0_6px_15px_rgba(231,0,11,0.4)]
+;
+}
+
+.hint {
+  @apply text-center text-xs opacity-60 my-2.5 mx-0 mt-3 mb-3;
+}
+
+.dashboard-btn {
+  @apply w-full flex items-center justify-center gap-2 p-3.5 font-bold rounded-2xl bg-[#FFFFFF0D] text-white border-none cursor-pointer;
+}
